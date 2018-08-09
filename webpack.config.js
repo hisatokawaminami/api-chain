@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-entry: './src/main.js',
+entry: './src/dino-interface.js',
 output: {
   filename: 'bundle.js',
   path: path.resolve(__dirname, 'dist')
@@ -15,7 +15,7 @@ devServer: {
 plugins: [
   new CleanWebpackPlugin(['dist']),
   new HtmlWebpackPlugin({
-    title: 'Super Galactic Age Calculator',
+    title: 'Dino Love',
     template: './src/index.html',
     inject: 'body'
   })
